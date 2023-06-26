@@ -1,0 +1,25 @@
+.quiz_question{
+    border: 0.5px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.quiz-button{
+    background-color: #266fff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Poppins-medium', sans-serif;
+    cursor: pointer;
+    
+}
+
+.quiz-button:hover{
+    background-color: #74befb;
+    color: black;
+    transition: 0.5s;
+    border-radius: 10px;
+}

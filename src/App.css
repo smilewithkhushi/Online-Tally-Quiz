@@ -21,9 +21,9 @@
   background-color: white;
   height: 100px;
   color: black;
-  padding-right: 30px;
+  padding: 5px 10px 5px 10px;
   word-wrap: break-word;
-  padding-left: 20px;
+  overflow: hidden;
 }
 
 .App-navbar a{
@@ -58,9 +58,27 @@
   background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
   width: 100%;
   padding: 5%;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
+
+.App-header h1{
+  color: rgb(54, 54, 54);
+}
+
+.App-header h4{
+  width: 60%;
+  color: rgb(54, 54, 54);
+}
+
+
+.App-header h5{
+  width: 60%;
+  color: rgb(54, 54, 54);
+  text-align: justify;
+}
+
+
 
 .App-footer{
   margin-top: 30px;
@@ -74,7 +92,7 @@
 
 .quiz-container{
   width: 60%;
-  padding: 10px;
+  padding: 5px;
   margin: auto;
   background-color: white;
   overflow: hidden;
@@ -87,10 +105,13 @@
   color: white;
   border-radius: 10px;
   font-size: 18px;
-  background-image: linear-gradient(315deg, #63a4ff 0%, #3fdde8 74%);
+  background-image: linear-gradient(315deg, #63a4ff 0%, #25e3f0 74%);
   margin: auto;
+  margin-top: 40px;
   overflow: hidden;
   border: 2px solid white;
+  
+  box-shadow: 1px 1px 1px 1px #c3c3c3;
 }
 
 .quiz-submission:hover{
@@ -98,6 +119,52 @@
   transition: 1s;
   transform: scale(1.1);
   border-radius: 10px;
+  
+  font-weight: bold;
   color: #021a3c;
   box-shadow: 2px 2px 2px 2px #989898;
 }
+
+.quiz-marks{
+  border: 2px dashed rgb(149, 142, 254);
+  padding: 10px 60px;
+  margin: 20px;
+  width: max-content;
+  border-radius: 10px;
+
+}
+.quiz-marks h3{
+  color: #266fff;
+  font-family: 'Poppins-medium', sans-serif;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 600px) {
+
+  .App-navbar a{
+    overflow: hidden;
+    display: inline-block;
+    font-size: 15px;
+    margin: 20px 10px
+  }
+
+  .App-navbar img{
+    width: 80px;
+  }
+
+  .App-header h1{
+    font-size: 25px;
+  }
+  .App-header h4{
+    font-size: 14px;
+  }
+  .App-header h5{
+    font-size: 12px;
+  }
+  .quiz-container{
+    width: 80%;
+  }
+  
+} 

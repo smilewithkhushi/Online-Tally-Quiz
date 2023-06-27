@@ -1,7 +1,8 @@
 .quiz_question{
     border: 0.5px solid black;
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
+    border-radius: 5px;
 }
 
 .quiz-button{
@@ -22,4 +23,20 @@
     color: black;
     transition: 0.5s;
     border-radius: 10px;
+}
+
+@media (max-width: 600px){
+    .quiz-button{
+        font-size: 12px;
+    }
+    .quiz_question h3{
+        font-size: 15px;
+    }
+    .quiz_question{
+        padding: 10px;
+        width: 80%;
+    }
+    label{
+        font-size: 13px;
+    }
 }

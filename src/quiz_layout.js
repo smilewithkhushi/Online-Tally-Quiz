@@ -1,7 +1,7 @@
 import './layout.css'
 import React, {useState} from 'react'
 
-function Quiz ({ question, options, correctAnswer, points }){
+function Quiz ({ question, options, correctAnswer, points, globalscore, setGlobalScore }) {
   const [selectedOption, setSelectedOption] = useState(null);
   const [score, setScore] = useState(0);
   const [submitted, setSubmitted] = useState(false);
@@ -14,8 +14,9 @@ function Quiz ({ question, options, correctAnswer, points }){
     e.preventDefault();
 
     if (selectedOption === correctAnswer) {
-      let temp=score+1
+      let temp=score+1;
       setScore(temp);
+      setGlobalScore(globalscore+1);
     }
 
     setSubmitted(true);
@@ -43,7 +44,7 @@ function Quiz ({ question, options, correctAnswer, points }){
         </button>
       </form>
       <br></br>
-      {submitted && <div> Your answer has been submitted. Marks : {score} </div>}
+      {submitted && <div> Your answer {selectedOption} has been saved. </div>}
     </div>
     
       /* marks islie include kia hai taki khud track kar saku nothing more */

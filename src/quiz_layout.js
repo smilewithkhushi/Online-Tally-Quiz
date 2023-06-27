@@ -1,7 +1,7 @@
 import './layout.css'
 import React, {useState} from 'react'
 
-function Quiz ({ question, options, correctAnswer, points, globalscore, setGlobalScore }) {
+function Quiz ({ question, options, correctAnswer, globalscore, setGlobalScore }) {
   const [selectedOption, setSelectedOption] = useState(null);
   const [score, setScore] = useState(0);
   const [submitted, setSubmitted] = useState(false);
@@ -14,7 +14,7 @@ function Quiz ({ question, options, correctAnswer, points, globalscore, setGloba
     e.preventDefault();
 
     if (selectedOption === correctAnswer) {
-      let temp=score+1;
+      let temp=score+3;
       setScore(temp);
       setGlobalScore(globalscore+1);
     }

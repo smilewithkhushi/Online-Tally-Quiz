@@ -40,8 +40,8 @@ function App() {
                 </nav>
 
             <header className='App-header'>
-                <h1>VMACE Quiz Examination</h1>
-                <h4>Solve this beginner friendly quiz based on fundamentals of computer systems and access your skills </h4>
+                <h1>VMACE Tally Examination</h1>
+                <h4>Solve these objective questions based on Tally </h4>
                 <h3> INSTRUCTIONS :</h3>
                 <h5>- Select an option and click on the submit button to save the answer of the particular question</h5>
                 <h5>- You can change your answer by selecting another option and clicking on the submit button</h5>
@@ -61,7 +61,7 @@ function App() {
 
             <br></br>
             <footer className='App-footer'>
-                <p>Copyright 2023 @VMACE | All Rights Reserved</p>
+                <p>Copyright 2023 VMACE | All Rights Reserved</p>
                 <br></br>
             </footer>
 

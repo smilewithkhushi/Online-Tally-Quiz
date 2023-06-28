@@ -26,7 +26,7 @@ function App() {
         setDisplayText(
         <div className='quiz-marks'>
             <h3>VMACE Tally Examination Marks</h3>
-            <h2>Your Marks: {globalscore} /50 </h2>
+            <h2>Your Marks: {globalscore} /15 </h2>
         </div>);
     };
 

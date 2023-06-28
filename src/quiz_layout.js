@@ -14,7 +14,7 @@ function Quiz ({ question, options, correctAnswer, globalscore, setGlobalScore }
     e.preventDefault();
 
     if (selectedOption === correctAnswer) {
-      let temp=score+3;
+      let temp=score+1;
       setScore(temp);
       setGlobalScore(globalscore+1);
     }
